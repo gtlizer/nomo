@@ -1,0 +1,89 @@
+.home{
+    background-color: white;
+    padding: 3rem 3rem 0 3rem;
+}
+
+.home__wrapper{
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    height: 95vh;
+}
+
+
+.home__main{
+    height: 100%;
+    display: grid;
+    grid-template-rows: min-content repeat(4, min-content) 1fr;
+    grid-row-gap: 2rem;
+    justify-items: center;
+    padding: 0 3rem;
+
+    @include breakpoint('md') {
+        grid-template-rows: min-content;
+        grid-template-columns: repeat(2, max-content) 1fr repeat(2, max-content);
+        align-content: center;
+        align-items: center;
+        column-gap: 5vw;
+    }
+
+    @include breakpoint('lg') {
+        grid-template-columns: repeat(auto-fit, minmax(max-content,1fr)) min-content repeat(auto-fit, minmax(max-content,1fr));
+        column-gap: 0vw;
+        .merch{
+            margin-right: 8rem;
+        }
+        .nomies{
+            margin-left: 8rem;
+        }
+    }
+
+    @include breakpoint('xl') {
+        margin: 0 3rem;
+
+        .merch{
+            margin-right: 10vw;
+        }
+        .nomies{
+            margin-left: 10vw;
+        }
+    }
+
+    img{
+        width: 140%;
+        grid-row: 1/2;
+        @include breakpoint('md') {
+            grid-column: 3/4;
+            width: 100%;
+        }
+
+        @include breakpoint('lg') {
+            grid-column: 3/4;
+            width: 100%;
+        }
+
+        @include breakpoint('xl') {
+            width: 90%;
+        }
+    }
+
+    .nav-item{
+        font-size: 3rem;
+        font-weight: 200;
+        text-align: center;
+
+        @include breakpoint('lg') {
+            font-size: 3.5rem;
+        }
+
+        a{
+            &:hover{
+                text-decoration: line-through;
+                color: black;
+            }
+        }
+    }
+
+}

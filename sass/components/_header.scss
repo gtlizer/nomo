@@ -1,0 +1,16 @@
+.logo{
+    margin-bottom: 5rem;
+
+    @include breakpoint('md') {
+        margin-bottom: 0rem;
+    }
+    img{
+        margin: 0 auto;
+        width: 50%;
+        display: block;
+
+        @include breakpoint('md') {
+            width: 20%;
+        }
+    }
+}

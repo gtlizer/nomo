@@ -1,0 +1,27 @@
+footer{
+    .socials{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        width: 30vw;
+        margin: 0 auto;
+
+        @include breakpoint('md') {
+            width: 20vw;
+        }
+        @include breakpoint('lg') {
+            width: 15vw;
+        }
+        @include breakpoint('xl') {
+            width: 10vw;
+        }
+
+        i{
+            font-size: 2rem;
+
+            @include breakpoint('md') {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

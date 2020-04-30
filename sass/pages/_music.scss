@@ -1,0 +1,193 @@
+.music{
+    background-color: white;
+    padding: 3rem 0;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+
+        .musiclogo{
+            margin-bottom: 0rem;
+        }
+    }
+}
+
+.music__main{
+    width: 100%;
+    position: relative;
+
+    .musicbg{
+        width: 100%;
+        z-index: 1;
+    }
+
+    .album{
+        width: 37vw;
+        display: block;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .talktome{
+        top: 8%;
+        left: 5%;
+        width: 40vw;
+    }
+
+    .longfall{
+        top: 42%;
+        left: 53%;;
+        width: 43vw;
+    }
+
+    .yoyatsu{
+        top: 75%;
+        left: 5%;;
+    }
+
+    // TEXT
+
+    h4{
+        display: block;
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        font-size: 3rem;
+        font-weight: bold;
+
+        @include breakpoint('sm') {
+            font-size: 5rem;
+        }
+
+        @include breakpoint('md') {
+            font-size: 7rem;
+        }
+
+        @include breakpoint('lg') {
+            font-size: 9rem;
+        }
+
+        @include breakpoint('xl') {
+            font-size: 10rem;
+        }
+    }
+
+    .album-text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2rem;
+        font-weight: 600;
+
+        .sub-text{
+            font-size: 1.5rem;
+        }
+
+        @include breakpoint('sm') {
+            font-size: 4rem;
+            .sub-text{
+                font-size: 3rem;
+            }
+        }
+
+        @include breakpoint('md') {
+            font-size: 6rem;
+            .sub-text{
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .talktome-text{
+        top: 11%;
+        left: 48%;
+    }
+
+    .longfall-text{
+        top: 42%;
+        left: auto;
+        right: 50%;
+        text-align: right;
+    }
+
+    .yoyatsu-text{
+        top: 75%;
+        left: 45%;
+    }
+
+    .description-text{
+        font-size: .7rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: source-code-pro, monospace;
+        font-weight: 700;
+
+        @include breakpoint('sm') {
+            font-size: 1rem;
+        }
+
+        @include breakpoint('md') {
+            font-size: 1.5rem;
+        }
+
+        @include breakpoint('md') {
+            font-size: 1.7rem;
+        }
+    }
+
+    .talktome-description{
+        top: 27%;
+        left: 9%;
+    }
+
+    .longfall-description{
+        top: 48%;
+        left: auto;
+        right: 51%;
+        text-align: right;
+    }
+
+    .yoyatsu-description{
+        top: 92%;
+        left: 8%;
+
+        @include breakpoint('sm') {
+            top: 92.5%;
+        }
+    }
+
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        display: none;
+        z-index: 3;
+
+        @include breakpoint('xl') {
+            display: block;
+        }
+    }
+
+    .iframe-1{
+        top: 14%;
+        right: 10%;
+        left: auto;
+    }
+
+
+    .iframe-2{
+        top: 80%;
+        left: 45%;
+    }
+
+    .iframe-3{
+        top: 45.5%;
+        right: 49%;
+        left: auto;
+    }
+}
+

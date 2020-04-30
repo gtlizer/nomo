@@ -1,0 +1,364 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+*::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+a {
+  color: inherit; }
+  a:hover {
+    text-decoration: none;
+    color: inherit; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+html {
+  font-size: 62.5%;
+  font-family: Helvetica; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media only screen and (min-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+  @media only screen and (min-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+footer .socials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  width: 30vw;
+  margin: 0 auto; }
+  @media only screen and (min-width: 56.25em) {
+    footer .socials {
+      width: 20vw; } }
+  @media only screen and (min-width: 75em) {
+    footer .socials {
+      width: 15vw; } }
+  @media only screen and (min-width: 93em) {
+    footer .socials {
+      width: 10vw; } }
+  footer .socials i {
+    font-size: 2rem; }
+    @media only screen and (min-width: 56.25em) {
+      footer .socials i {
+        font-size: 2.5rem; } }
+
+.email {
+  width: 100vw;
+  text-align: center;
+  margin: 3rem 0 5rem 0;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  font-size: .9rem; }
+  @media only screen and (min-width: 37.5em) {
+    .email {
+      font-size: 1.5rem;
+      letter-spacing: 1.7rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .email {
+      font-size: 1.7rem;
+      letter-spacing: 2rem;
+      margin: 8rem 0; } }
+  @media only screen and (min-width: 75em) {
+    .email {
+      font-size: 2rem;
+      letter-spacing: 4rem;
+      margin: 10rem 0; } }
+
+.logo {
+  margin-bottom: 5rem; }
+  @media only screen and (min-width: 56.25em) {
+    .logo {
+      margin-bottom: 0rem; } }
+  .logo img {
+    margin: 0 auto;
+    width: 50%;
+    display: block; }
+    @media only screen and (min-width: 56.25em) {
+      .logo img {
+        width: 20%; } }
+
+.home {
+  background-color: white;
+  padding: 3rem 3rem 0 3rem; }
+
+.home__wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  height: 95vh; }
+
+.home__main {
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content repeat(4, min-content) 1fr;
+  grid-row-gap: 2rem;
+  justify-items: center;
+  padding: 0 3rem; }
+  @media only screen and (min-width: 56.25em) {
+    .home__main {
+      grid-template-rows: min-content;
+      grid-template-columns: repeat(2, max-content) 1fr repeat(2, max-content);
+      align-content: center;
+      align-items: center;
+      column-gap: 5vw; } }
+  @media only screen and (min-width: 75em) {
+    .home__main {
+      grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr)) min-content repeat(auto-fit, minmax(max-content, 1fr));
+      column-gap: 0vw; }
+      .home__main .merch {
+        margin-right: 8rem; }
+      .home__main .nomies {
+        margin-left: 8rem; } }
+  @media only screen and (min-width: 93em) {
+    .home__main {
+      margin: 0 3rem; }
+      .home__main .merch {
+        margin-right: 10vw; }
+      .home__main .nomies {
+        margin-left: 10vw; } }
+  .home__main img {
+    width: 140%;
+    grid-row: 1/2; }
+    @media only screen and (min-width: 56.25em) {
+      .home__main img {
+        grid-column: 3/4;
+        width: 100%; } }
+    @media only screen and (min-width: 75em) {
+      .home__main img {
+        grid-column: 3/4;
+        width: 100%; } }
+    @media only screen and (min-width: 93em) {
+      .home__main img {
+        width: 90%; } }
+  .home__main .nav-item {
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center; }
+    @media only screen and (min-width: 75em) {
+      .home__main .nav-item {
+        font-size: 3.5rem; } }
+    .home__main .nav-item a:hover {
+      text-decoration: line-through;
+      color: black; }
+
+.about {
+  background-color: white;
+  padding: 3rem 3rem 0 3rem; }
+  .about__main {
+    background-image: url(); }
+
+.music {
+  background-color: white;
+  padding: 3rem 0; }
+  .music__wrapper {
+    display: flex;
+    flex-direction: column; }
+    .music__wrapper .musiclogo {
+      margin-bottom: 0rem; }
+
+.music__main {
+  width: 100%;
+  position: relative; }
+  .music__main .musicbg {
+    width: 100%;
+    z-index: 1; }
+  .music__main .album {
+    width: 37vw;
+    display: block;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .music__main .talktome {
+    top: 8%;
+    left: 5%;
+    width: 40vw; }
+  .music__main .longfall {
+    top: 42%;
+    left: 53%;
+    width: 43vw; }
+  .music__main .yoyatsu {
+    top: 75%;
+    left: 5%; }
+  .music__main h4 {
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    font-size: 3rem;
+    font-weight: bold; }
+    @media only screen and (min-width: 37.5em) {
+      .music__main h4 {
+        font-size: 5rem; } }
+    @media only screen and (min-width: 56.25em) {
+      .music__main h4 {
+        font-size: 7rem; } }
+    @media only screen and (min-width: 75em) {
+      .music__main h4 {
+        font-size: 9rem; } }
+    @media only screen and (min-width: 93em) {
+      .music__main h4 {
+        font-size: 10rem; } }
+  .music__main .album-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    font-weight: 600; }
+    .music__main .album-text .sub-text {
+      font-size: 1.5rem; }
+    @media only screen and (min-width: 37.5em) {
+      .music__main .album-text {
+        font-size: 4rem; }
+        .music__main .album-text .sub-text {
+          font-size: 3rem; } }
+    @media only screen and (min-width: 56.25em) {
+      .music__main .album-text {
+        font-size: 6rem; }
+        .music__main .album-text .sub-text {
+          font-size: 4rem; } }
+  .music__main .talktome-text {
+    top: 11%;
+    left: 48%; }
+  .music__main .longfall-text {
+    top: 42%;
+    left: auto;
+    right: 50%;
+    text-align: right; }
+  .music__main .yoyatsu-text {
+    top: 75%;
+    left: 45%; }
+  .music__main .description-text {
+    font-size: .7rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: source-code-pro, monospace;
+    font-weight: 700; }
+    @media only screen and (min-width: 37.5em) {
+      .music__main .description-text {
+        font-size: 1rem; } }
+    @media only screen and (min-width: 56.25em) {
+      .music__main .description-text {
+        font-size: 1.5rem; } }
+    @media only screen and (min-width: 56.25em) {
+      .music__main .description-text {
+        font-size: 1.7rem; } }
+  .music__main .talktome-description {
+    top: 27%;
+    left: 9%; }
+  .music__main .longfall-description {
+    top: 48%;
+    left: auto;
+    right: 51%;
+    text-align: right; }
+  .music__main .yoyatsu-description {
+    top: 92%;
+    left: 8%; }
+    @media only screen and (min-width: 37.5em) {
+      .music__main .yoyatsu-description {
+        top: 92.5%; } }
+  .music__main iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    display: none;
+    z-index: 3; }
+    @media only screen and (min-width: 93em) {
+      .music__main iframe {
+        display: block; } }
+  .music__main .iframe-1 {
+    top: 14%;
+    right: 10%;
+    left: auto; }
+  .music__main .iframe-2 {
+    top: 80%;
+    left: 45%; }
+  .music__main .iframe-3 {
+    top: 45.5%;
+    right: 49%;
+    left: auto; }
