@@ -5,19 +5,35 @@
     letter-spacing: 1rem;
     font-weight: bold;
     font-size: .9rem;
+    transition: all .2s ease;
+
+
+    &:hover{
+        letter-spacing: 1.5rem;
+    }
 
     @include breakpoint('sm') {
         font-size: 1.5rem;
         letter-spacing: 1.7rem;
+        &:hover{
+            letter-spacing: 2rem;
+        }
     }
     @include breakpoint('md') {
         font-size: 1.7rem;
-        letter-spacing: 2rem;
+        letter-spacing: 1.9rem;
         margin: 8rem 0;
+        &:hover{
+            letter-spacing: 2.1rem;
+        }
     }
     @include breakpoint('lg') {
         font-size: 2rem;
         letter-spacing: 4rem;
         margin: 10rem 0;
+        &:hover{
+            letter-spacing: 5rem;
+        }
     }
+
 }
