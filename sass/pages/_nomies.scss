@@ -1,0 +1,47 @@
+.nomies{
+    background-color: white;
+
+    &__wrapper{
+        margin-top: 3rem;
+    }
+
+    &__main{
+        margin-top: 2rem;
+        
+        .grid {
+            display: flex;
+            padding: 0 .2rem;
+        }
+
+        .grid-col {
+            flex: 1;
+            padding: 0 .3em;
+        }
+
+        .grid-col--2, .grid-col--3, .grid-col--4 {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: .3rem;
+        }
+
+        @include breakpoint('sm') {
+            .grid-col--2 { display: block; }
+            .grid-col {
+                padding: 0 .5em;
+            }
+            img {
+                margin-bottom: .8em;
+            }
+        }
+
+        @include breakpoint('md') {
+            .grid-col--3 { display: block; }
+        }
+        @include breakpoint('lg') {
+            .grid-col--4 { display: block; }
+        }
+    }
+}

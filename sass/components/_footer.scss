@@ -4,7 +4,7 @@ footer{
         grid-template-columns: repeat(4,1fr);
         justify-items: center;
         width: 30vw;
-        margin: 0 auto;
+        margin: 0 auto 2rem auto;
 
         @include breakpoint('md') {
             width: 20vw;
