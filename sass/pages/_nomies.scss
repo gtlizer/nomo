@@ -6,42 +6,38 @@
     }
 
     &__main{
-        margin-top: 2rem;
-        
-        .grid {
-            display: flex;
-            padding: 0 .2rem;
-        }
-
-        .grid-col {
-            flex: 1;
-            padding: 0 .3em;
-        }
-
-        .grid-col--2, .grid-col--3, .grid-col--4 {
-            display: none;
-        }
-
-        img {
-            width: 100%;
-            margin-bottom: .3rem;
-        }
-
-        @include breakpoint('sm') {
-            .grid-col--2 { display: block; }
-            .grid-col {
-                padding: 0 .5em;
-            }
-            img {
-                margin-bottom: .8em;
-            }
-        }
+        margin-top: 0rem;
 
         @include breakpoint('md') {
-            .grid-col--3 { display: block; }
+            margin-top: 2rem;
         }
-        @include breakpoint('lg') {
-            .grid-col--4 { display: block; }
+        
+        .grid {
+            padding: 0 .5rem;
+            column-count: 1;
+            column-gap: 1rem;
+
+            &-item{
+                margin-bottom: .5rem;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            @include breakpoint('sm') {
+                column-count: 2;
+            }
+            @include breakpoint('md') {
+                column-count: 3;
+                &-item{
+                    margin-bottom: 1rem;
+                }
+            }
+            @include breakpoint('lg') {
+                column-count: 4;
+            }
         }
+
     }
 }

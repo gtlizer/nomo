@@ -275,31 +275,29 @@ footer .socials {
   .nomies__wrapper {
     margin-top: 3rem; }
   .nomies__main {
-    margin-top: 2rem; }
-    .nomies__main .grid {
-      display: flex;
-      padding: 0 .2rem; }
-    .nomies__main .grid-col {
-      flex: 1;
-      padding: 0 .3em; }
-    .nomies__main .grid-col--2, .nomies__main .grid-col--3, .nomies__main .grid-col--4 {
-      display: none; }
-    .nomies__main img {
-      width: 100%;
-      margin-bottom: .3rem; }
-    @media only screen and (min-width: 37.5em) {
-      .nomies__main .grid-col--2 {
-        display: block; }
-      .nomies__main .grid-col {
-        padding: 0 .5em; }
-      .nomies__main img {
-        margin-bottom: .8em; } }
+    margin-top: 0rem; }
     @media only screen and (min-width: 56.25em) {
-      .nomies__main .grid-col--3 {
-        display: block; } }
-    @media only screen and (min-width: 75em) {
-      .nomies__main .grid-col--4 {
-        display: block; } }
+      .nomies__main {
+        margin-top: 2rem; } }
+    .nomies__main .grid {
+      padding: 0 .5rem;
+      column-count: 1;
+      column-gap: 1rem; }
+      .nomies__main .grid-item {
+        margin-bottom: .5rem; }
+      .nomies__main .grid img {
+        width: 100%; }
+      @media only screen and (min-width: 37.5em) {
+        .nomies__main .grid {
+          column-count: 2; } }
+      @media only screen and (min-width: 56.25em) {
+        .nomies__main .grid {
+          column-count: 3; }
+          .nomies__main .grid-item {
+            margin-bottom: 1rem; } }
+      @media only screen and (min-width: 75em) {
+        .nomies__main .grid {
+          column-count: 4; } }
 
 .music {
   background-color: white;
