@@ -172,6 +172,125 @@ footer .socials {
       .logo img {
         width: 20%; } }
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.4rem; }
+  .navigation .nav-option {
+    font-size: 1.2rem; }
+    .navigation .nav-option:hover {
+      text-decoration: line-through; }
+  .navigation .nav-logo {
+    width: 30%; }
+
+@media only screen and (min-width: 0em) {
+  .nomies .navigation {
+    margin: 3rem 0;
+    padding: 0 3rem;
+    height: 3rem; }
+    .nomies .navigation .nav-option {
+      font-size: 1.2rem; }
+    .nomies .navigation .nav-logo {
+      width: 25%; } }
+
+@media only screen and (min-width: 37.5em) {
+  .nomies .navigation {
+    margin: 5rem 0;
+    padding: 0 3rem; }
+    .nomies .navigation .nav-option {
+      font-size: 1.8rem; } }
+
+@media only screen and (min-width: 56.25em) {
+  .nomies .navigation {
+    margin: 7rem 0;
+    padding: 0 7rem; }
+    .nomies .navigation .nav-option {
+      font-size: 2.7rem; } }
+
+@media only screen and (min-width: 75em) {
+  .nomies .navigation {
+    margin: 5rem 0;
+    padding: 0 10rem; }
+    .nomies .navigation .nav-option {
+      font-size: 2.7rem; }
+    .nomies .navigation .nav-logo {
+      width: 10%; } }
+
+@media only screen and (min-width: 93em) {
+  .nomies .navigation {
+    margin: 5rem 0;
+    padding: 0 20rem; }
+    .nomies .navigation .nav-option {
+      font-size: 2.7rem; }
+    .nomies .navigation .nav-logo {
+      width: 15%; } }
+
+.about .navigation {
+  position: absolute;
+  top: 1%; }
+
+@media only screen and (min-width: 37.5em) {
+  .about .navigation {
+    padding: 0 3rem; }
+    .about .navigation .nav-option {
+      font-size: 1.8rem; } }
+
+@media only screen and (min-width: 56.25em) {
+  .about .navigation {
+    padding: 0 7rem; }
+    .about .navigation .nav-option {
+      font-size: 2.7rem; } }
+
+@media only screen and (min-width: 75em) {
+  .about .navigation {
+    padding: 0 10rem; }
+    .about .navigation .nav-option {
+      font-size: 2.7rem; }
+    .about .navigation .nav-logo {
+      width: 25%; } }
+
+@media only screen and (min-width: 93em) {
+  .about .navigation {
+    padding: 0 20rem; }
+    .about .navigation .nav-option {
+      font-size: 3rem; }
+    .about .navigation .nav-logo {
+      width: 20%; } }
+
+.music .navigation {
+  position: absolute;
+  top: 1%; }
+
+@media only screen and (min-width: 37.5em) {
+  .music .navigation {
+    padding: 0 3rem; }
+    .music .navigation .nav-option {
+      font-size: 1.8rem; } }
+
+@media only screen and (min-width: 56.25em) {
+  .music .navigation {
+    padding: 0 7rem; }
+    .music .navigation .nav-option {
+      font-size: 2.7rem; } }
+
+@media only screen and (min-width: 75em) {
+  .music .navigation {
+    padding: 0 10rem; }
+    .music .navigation .nav-option {
+      font-size: 2.7rem; }
+    .music .navigation .nav-logo {
+      width: 25%; } }
+
+@media only screen and (min-width: 93em) {
+  .music .navigation {
+    padding: 0 20rem; }
+    .music .navigation .nav-option {
+      font-size: 3rem; }
+    .music .navigation .nav-logo {
+      width: 20%; } }
+
 .home {
   background-color: white;
   padding: 3rem 3rem 0 3rem; }
@@ -239,21 +358,27 @@ footer .socials {
       color: black; }
 
 .about {
-  background-color: white;
-  padding: 3rem 0rem 0 0rem; }
+  background-color: white; }
   .about__main {
     background-image: url(../../media/aboutbg.jpg);
     background-size: contain;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    align-items: center; }
+    align-items: center;
+    padding: 8rem 0 0 0; }
     @media only screen and (min-width: 56.25em) {
       .about__main {
-        margin-top: 3rem;
+        padding: 12vw 0 0 0;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
         background-size: cover; } }
-    .about__main img {
+    @media only screen and (min-width: 75em) {
+      .about__main {
+        padding: 8vw 0 0 0; } }
+    @media only screen and (min-width: 93em) {
+      .about__main {
+        padding: 6vw 0 0 0; } }
+    .about__main .about-graphic {
       margin: 3rem auto;
       width: 95%;
       opacity: 0;
@@ -262,10 +387,10 @@ footer .socials {
       animation-fill-mode: both;
       animation-delay: 1s; }
       @media only screen and (min-width: 37.5em) {
-        .about__main img {
+        .about__main .about-graphic {
           width: 90%; } }
       @media only screen and (min-width: 56.25em) {
-        .about__main img {
+        .about__main .about-graphic {
           width: 80%; } }
 
 @keyframes fadeInUp {
@@ -277,8 +402,6 @@ footer .socials {
 
 .nomies {
   background-color: white; }
-  .nomies__wrapper {
-    margin-top: 3rem; }
   .nomies__main {
     margin-top: 0rem; }
     @media only screen and (min-width: 56.25em) {
@@ -308,13 +431,10 @@ footer .socials {
   background-color: white; }
 
 .music {
-  background-color: white;
-  padding: 3rem 0; }
+  background-color: white; }
   .music__wrapper {
     display: flex;
     flex-direction: column; }
-    .music__wrapper .musiclogo {
-      margin-bottom: 0rem; }
 
 .music__main {
   width: 100%;
@@ -330,11 +450,11 @@ footer .socials {
     top: 0;
     left: 0; }
   .music__main .talktome {
-    top: 8%;
+    top: 11.5%;
     left: 5%;
     width: 40vw; }
   .music__main .longfall {
-    top: 42%;
+    top: 44.5%;
     left: 53%;
     width: 43vw; }
   .music__main .yoyatsu {
@@ -343,7 +463,7 @@ footer .socials {
   .music__main h4 {
     display: block;
     position: absolute;
-    top: 3%;
+    top: 7%;
     left: 3%;
     font-size: 3rem;
     font-weight: bold; }
@@ -378,15 +498,15 @@ footer .socials {
         .music__main .album-text .sub-text {
           font-size: 4rem; } }
   .music__main .talktome-text {
-    top: 11%;
+    top: 13.5%;
     left: 48%; }
   .music__main .longfall-text {
-    top: 42%;
+    top: 44.5%;
     left: auto;
     right: 50%;
     text-align: right; }
   .music__main .yoyatsu-text {
-    top: 75%;
+    top: 77.5%;
     left: 45%; }
   .music__main .description-text {
     font-size: .7rem;
@@ -405,15 +525,15 @@ footer .socials {
       .music__main .description-text {
         font-size: 1.7rem; } }
   .music__main .talktome-description {
-    top: 27%;
+    top: 29.5%;
     left: 9%; }
   .music__main .longfall-description {
-    top: 48%;
+    top: 50.5%;
     left: auto;
     right: 51%;
     text-align: right; }
   .music__main .yoyatsu-description {
-    top: 92%;
+    top: 92.5%;
     left: 8%; }
     @media only screen and (min-width: 37.5em) {
       .music__main .yoyatsu-description {
@@ -429,13 +549,13 @@ footer .socials {
       .music__main iframe {
         display: block; } }
   .music__main .iframe-1 {
-    top: 14%;
+    top: 16.5%;
     right: 10%;
     left: auto; }
   .music__main .iframe-2 {
-    top: 80%;
+    top: 82.5%;
     left: 45%; }
   .music__main .iframe-3 {
-    top: 45.5%;
+    top: 48%;
     right: 49%;
     left: auto; }

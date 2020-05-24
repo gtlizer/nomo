@@ -1,10 +1,5 @@
 .about{
     background-color: white;
-    padding: 3rem 0rem 0 0rem;
-
-    &__wrapper{
-
-    }
 
     &__main{
         background-image: url(../../media/aboutbg.jpg);
@@ -12,15 +7,24 @@
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         align-items: center;
+        padding: 8rem 0 0 0;
+        
 
         @include breakpoint('md') {
-            margin-top: 3rem;
+            padding: 12vw 0 0 0;
             grid-template-rows: repeat(2, 1fr);
             grid-template-columns: repeat(2, 1fr);
             background-size: cover;
         }
 
-        img{
+        @include breakpoint('lg') {
+            padding: 8vw 0 0 0;
+        }
+        @include breakpoint('xl') {
+            padding: 6vw 0 0 0;
+        }
+
+        .about-graphic{
             margin: 3rem auto;
             width: 95%;
             opacity: 0;

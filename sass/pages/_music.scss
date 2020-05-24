@@ -1,14 +1,9 @@
 .music{
     background-color: white;
-    padding: 3rem 0;
 
     &__wrapper{
         display: flex;
-        flex-direction: column;
-
-        .musiclogo{
-            margin-bottom: 0rem;
-        }
+        flex-direction: column;   
     }
 }
 
@@ -31,13 +26,13 @@
     }
 
     .talktome{
-        top: 8%;
+        top: 11.5%;
         left: 5%;
         width: 40vw;
     }
 
     .longfall{
-        top: 42%;
+        top: 44.5%;
         left: 53%;;
         width: 43vw;
     }
@@ -52,7 +47,7 @@
     h4{
         display: block;
         position: absolute;
-        top: 3%;
+        top: 7%;
         left: 3%;
         font-size: 3rem;
         font-weight: bold;
@@ -101,19 +96,19 @@
     }
 
     .talktome-text{
-        top: 11%;
+        top: 13.5%;
         left: 48%;
     }
 
     .longfall-text{
-        top: 42%;
+        top: 44.5%;
         left: auto;
         right: 50%;
         text-align: right;
     }
 
     .yoyatsu-text{
-        top: 75%;
+        top: 77.5%;
         left: 45%;
     }
 
@@ -139,19 +134,19 @@
     }
 
     .talktome-description{
-        top: 27%;
+        top: 29.5%;
         left: 9%;
     }
 
     .longfall-description{
-        top: 48%;
+        top: 50.5%;
         left: auto;
         right: 51%;
         text-align: right;
     }
 
     .yoyatsu-description{
-        top: 92%;
+        top: 92.5%;
         left: 8%;
 
         @include breakpoint('sm') {
@@ -173,19 +168,19 @@
     }
 
     .iframe-1{
-        top: 14%;
+        top: 16.5%;
         right: 10%;
         left: auto;
     }
 
 
     .iframe-2{
-        top: 80%;
+        top: 82.5%;
         left: 45%;
     }
 
     .iframe-3{
-        top: 45.5%;
+        top: 48%;
         right: 49%;
         left: auto;
     }
