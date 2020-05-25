@@ -130,7 +130,7 @@ footer .socials {
 
 .music footer {
   position: absolute;
-  top: 96%;
+  top: 97%;
   left: 50%;
   transform: translateX(-50%);
   margin: 0; }
@@ -160,24 +160,26 @@ footer .socials {
   @media only screen and (min-width: 56.25em) {
     .email {
       font-size: 1.7rem;
-      letter-spacing: 1.9rem;
-      margin: 8rem 0; }
+      letter-spacing: 1.9rem; }
       .email:hover {
         letter-spacing: 2.1rem; } }
   @media only screen and (min-width: 75em) {
     .email {
       font-size: 2rem;
-      letter-spacing: 4rem;
-      margin: 2rem 0; }
+      letter-spacing: 4rem; }
       .email:hover {
         letter-spacing: 5rem; } }
 
 .music .email {
   position: absolute;
-  top: 91%; }
+  top: 92%; }
+  @media only screen and (min-width: 75em) {
+    .music .email {
+      top: 94%; } }
 
 .logo {
-  margin-bottom: 5rem; }
+  margin-top: 2rem;
+  margin-bottom: 4rem; }
   @media only screen and (min-width: 56.25em) {
     .logo {
       margin-bottom: 0rem; } }
@@ -484,7 +486,7 @@ footer .socials {
     left: 53%;
     width: 43vw; }
   .music__main .yoyatsu {
-    top: 69%;
+    top: 71%;
     left: 5%; }
   .music__main h4 {
     display: block;
@@ -551,15 +553,15 @@ footer .socials {
       .music__main .description-text {
         font-size: 1.7rem; } }
   .music__main .talktome-description {
-    top: 27%;
+    top: 27.5%;
     left: 9%; }
   .music__main .longfall-description {
-    top: 46%;
+    top: 47%;
     left: auto;
     right: 51%;
     text-align: right; }
   .music__main .yoyatsu-description {
-    top: 84.5%;
+    top: 86.5%;
     left: 5%; }
   .music__main iframe {
     position: absolute;
