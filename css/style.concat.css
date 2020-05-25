@@ -584,3 +584,8 @@ footer .socials {
     top: 54.5%;
     right: 49%;
     left: auto; }
+  .music__main .note {
+    position: absolute;
+    left: 2%;
+    top: 48%;
+    width: 30%; }
