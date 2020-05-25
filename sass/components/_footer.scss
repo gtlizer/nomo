@@ -32,3 +32,23 @@ footer{
         }
     }
 }
+
+.music{
+    footer{
+        position: absolute;
+        top: 96%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+}
+
+.about{
+    footer{
+        padding-bottom: 3rem;
+
+        @include breakpoint('lg') {
+            padding: 3rem 0;
+        }
+    }
+}

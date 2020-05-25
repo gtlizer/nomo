@@ -128,6 +128,19 @@ footer .socials {
       footer .socials ion-icon {
         font-size: 2.5rem; } }
 
+.music footer {
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0; }
+
+.about footer {
+  padding-bottom: 3rem; }
+  @media only screen and (min-width: 75em) {
+    .about footer {
+      padding: 3rem 0; } }
+
 .email {
   width: 100vw;
   text-align: center;
@@ -155,9 +168,13 @@ footer .socials {
     .email {
       font-size: 2rem;
       letter-spacing: 4rem;
-      margin: 10rem 0; }
+      margin: 2rem 0; }
       .email:hover {
         letter-spacing: 5rem; } }
+
+.music .email {
+  position: absolute;
+  top: 91%; }
 
 .logo {
   margin-bottom: 5rem; }
@@ -166,11 +183,17 @@ footer .socials {
       margin-bottom: 0rem; } }
   .logo img {
     margin: 0 auto;
-    width: 50%;
+    width: 35%;
     display: block; }
     @media only screen and (min-width: 56.25em) {
       .logo img {
         width: 20%; } }
+    @media only screen and (min-width: 75em) {
+      .logo img {
+        width: 15%; } }
+    @media only screen and (min-width: 93em) {
+      .logo img {
+        width: 10%; } }
 
 .navigation {
   display: flex;
@@ -359,9 +382,10 @@ footer .socials {
 
 .about {
   background-color: white; }
-  .about__main {
+  .about__bg {
     background-image: url(../../media/aboutbg.jpg);
-    background-size: contain;
+    background-size: contain; }
+  .about__main {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     align-items: center;
@@ -370,8 +394,7 @@ footer .socials {
       .about__main {
         padding: 12vw 0 0 0;
         grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        background-size: cover; } }
+        grid-template-columns: repeat(2, 1fr); } }
     @media only screen and (min-width: 75em) {
       .about__main {
         padding: 8vw 0 0 0; } }
@@ -450,26 +473,29 @@ footer .socials {
     top: 0;
     left: 0; }
   .music__main .talktome {
-    top: 11.5%;
+    top: 9%;
     left: 5%;
     width: 40vw; }
+    @media only screen and (min-width: 37.5em) {
+      .music__main .talktome {
+        top: 10%; } }
   .music__main .longfall {
-    top: 44.5%;
+    top: 40%;
     left: 53%;
     width: 43vw; }
   .music__main .yoyatsu {
-    top: 75%;
+    top: 69%;
     left: 5%; }
   .music__main h4 {
     display: block;
     position: absolute;
-    top: 7%;
+    top: 6%;
     left: 3%;
     font-size: 3rem;
     font-weight: bold; }
     @media only screen and (min-width: 37.5em) {
       .music__main h4 {
-        font-size: 5rem; } }
+        font-size: 4rem; } }
     @media only screen and (min-width: 56.25em) {
       .music__main h4 {
         font-size: 7rem; } }
@@ -501,12 +527,12 @@ footer .socials {
     top: 13.5%;
     left: 48%; }
   .music__main .longfall-text {
-    top: 44.5%;
+    top: 40%;
     left: auto;
     right: 50%;
     text-align: right; }
   .music__main .yoyatsu-text {
-    top: 77.5%;
+    top: 71%;
     left: 45%; }
   .music__main .description-text {
     font-size: .7rem;
@@ -525,19 +551,16 @@ footer .socials {
       .music__main .description-text {
         font-size: 1.7rem; } }
   .music__main .talktome-description {
-    top: 29.5%;
+    top: 27%;
     left: 9%; }
   .music__main .longfall-description {
-    top: 50.5%;
+    top: 46%;
     left: auto;
     right: 51%;
     text-align: right; }
   .music__main .yoyatsu-description {
-    top: 92.5%;
-    left: 8%; }
-    @media only screen and (min-width: 37.5em) {
-      .music__main .yoyatsu-description {
-        top: 92.5%; } }
+    top: 84.5%;
+    left: 5%; }
   .music__main iframe {
     position: absolute;
     top: 0;
@@ -553,9 +576,9 @@ footer .socials {
     right: 10%;
     left: auto; }
   .music__main .iframe-2 {
-    top: 82.5%;
+    top: 77%;
     left: 45%; }
   .music__main .iframe-3 {
-    top: 48%;
+    top: 54.5%;
     right: 49%;
     left: auto; }
